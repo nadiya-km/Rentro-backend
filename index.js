@@ -26,8 +26,8 @@ app.use(cookieParser());
 // cors
 app.use(
 	cors({
-		origin: process.env.FRONTEND_URL,
-		credentials: true,
+		origin: 'https://rentro-frontend-final.onrender.com',
+		credentials: true, // allow cookies / token in headers
 	})
 );
 app.use(
@@ -50,6 +50,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/cars', carRoutes);
 
 app.use('/api/admin', adminRecentUser);
+// 👈 ADD THIS
 
 // server
 app.listen(port, () => {
