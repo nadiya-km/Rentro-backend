@@ -26,7 +26,7 @@ app.use(cookieParser());
 // cors
 app.use(
 	cors({
-		origin: 'https://rentro-frontend-final.onrender.com',
+		origin: 'https://rentro-web-app.onrender.com',
 		credentials: true, // allow cookies / token in headers
 	})
 );
