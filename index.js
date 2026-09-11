@@ -50,7 +50,6 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/cars', carRoutes);
 
 app.use('/api/admin', adminRecentUser);
-// 👈 ADD THIS
 
 // server
 app.listen(port, () => {
